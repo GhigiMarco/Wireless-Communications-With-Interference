@@ -165,7 +165,7 @@ chan = l.get_channels;
 %% OFDM Waveform
 
     % input bit source:
-in = randi([0 1], N_eff_subcarriers*N_symbols*log2(M), N_disp_tot);                %matrice di 4 righe e sulle righe stanno i bit, generati randomicamente, il numero di simboli è 1100 (11 subcarrier*100simboli)
+in = randi([0 1], N_eff_subcarriers*N_symbols*log2(M), N_disp_tot);                %matrice di 4 righe e sulle righe stanno i bit, generati randomicamente, il numero di simboli Ã¨ 1100 (11 subcarrier*100simboli)
 clear ofdmMod
 clear waveform
 for i=1:N_disp_tot
@@ -176,7 +176,7 @@ for i=1:N_disp_tot
         'CyclicPrefixLength', [0], ...
         'Windowing', false, ...
         'NumSymbols', N_symbols, ...
-        'NumTransmitAntennas', 1, ... 
+        'NumTransmitAntennas', 1, ...Â 
         'PilotInputPort', true, ...
         'PilotCarrierIndices', pilot(i));
 
